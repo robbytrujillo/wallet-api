@@ -7,9 +7,21 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  # api/v1/wallets
+  # api/wallets
   
-  namespace :api 
-    namespace :v1 do
-      
+    namespace :api do
+      resources :wallets
+    end
+    namespace :api do      
+    resources :transactions
+    end
+    namespace :api do
+      resources :users
+    end
+    namespace :api do
+      resources :teams
+    end
+    namespace :api do
+      resources :holdings
+    end
 end
