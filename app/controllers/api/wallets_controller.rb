@@ -1,2 +1,5 @@
-class WalletsController < ApplicationController::Api
+module Api
+    class WalletsController < ApplicationController
+        
+    end
 end
